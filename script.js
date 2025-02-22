@@ -1,15 +1,16 @@
 function firstWord(s) {
   // your code here
-	let a='';
-	for(let i=0;i<s.length;i++){
-		if(s[i]==' ' && i!=0){
-			return a;
+	let a=s.trim();
+	let b=""; 
+	for(let i=0;i<a.length;i++){
+		if(a[i]===' '){
+			return b;
 		}
 		else{
-			a+=s[i];
+			b+=a[i];
 		}
 	}
-	return a;
+  return b;
 }
 
 // Do not change the code below
